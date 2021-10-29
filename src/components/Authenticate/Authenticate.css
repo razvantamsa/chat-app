@@ -1,0 +1,115 @@
+.Authenticate{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Authenticate .Navbar{
+    background-color: 	#232b2b;
+    border-right: 1px solid black;
+    height: 100vh;
+    width: 6em;
+    position: absolute;
+    left: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Authenticate .Navbar > div{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.Authenticate .Rooms,
+.Authenticate .Info,
+.Authenticate .Users{
+    position: absolute;
+    padding: 10px;
+    background-color: #232b2b;
+    left: 6em;
+    height: 15em;
+    width: auto;
+    border: 1px black solid;
+    display: none;
+}
+
+.Authenticate .Navbar i{
+    padding: 20px;
+    border-bottom: 1px solid white;
+}
+
+.displayRooms:hover .Rooms{
+    top: 20%;
+    display: block;
+    overflow-y: auto;
+}
+
+.displayUsers:hover .Users{
+    top: 30%;
+    display: block;
+    overflow-y: scroll;
+
+    text-align: start;
+}
+
+.user{
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px!important;
+    margin: 0!important;
+    padding: 0!important;
+    line-height: 16px!important;
+    border-left: 1px white solid;
+}
+
+.user i{
+    border-style: none!important;
+}
+
+.displayInfo:hover .Info{
+    top: 40%;
+    display: inline-block;
+    word-wrap: nowrap;
+    width: 25em;
+}
+
+.Authenticate .joinRoom{
+    width: 30vw;
+}
+
+.Authenticate .joinRoom h3{
+    text-align: center;
+    background-color: rgb(91, 111, 194);
+    margin-bottom: 0;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.room{
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.room-dropdown{
+    display: inline;
+}
+
+.room-dropdown i{
+    border-style: none!important;
+}
+
+.room-content{
+    display:none;
+    background-color: #232b2b;
+}
+
+.room:hover  .room-content{
+    display: block;
+}
